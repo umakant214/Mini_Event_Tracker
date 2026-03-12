@@ -1,0 +1,16 @@
+import express from "express";
+import registerController from "../controller/registerController.js";
+import loginController from "../controller/loginController.js";
+import eventCreateController from "../controller/eventCreateController.js";
+import getEventController from "../controller/getEventController.js";
+import deleteEventController from "../controller/deleteEventController.js";
+import updateEventController from "../controller/updateEventController.js";
+import authMeddleware from "../authMeddleware/authMeddleware.js";
+const router = express.Router();
+router.post("/register", registerController);
+router.post("/login", loginController);
+router.post("/create", authMeddleware, eventCreateController);
+router.get("/get-events", getEventController);
+router.delete("/delete-event/:id", authMeddleware, deleteEventController);
+router.put("/update-event/:id", authMeddleware, updateEventController);
+export default router;
