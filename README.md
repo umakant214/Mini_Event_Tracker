@@ -1,61 +1,61 @@
 # Mini Event Tracker
 
-A simple **Event Management Web Application** built using the **MERN Stack**.
-This application allows users to **create, view, update, and delete events** with secure authentication.
+A simple **Event Management Web Application** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**.
+This application enables users to **create, view, update, and delete events** with secure authentication.
 
 ---
 
 # Features
 
-- User Registration & Login (JWT Authentication)
-- Create Event
-- View Events
-- Update Event
-- Delete Event
-- Protected Routes using Auth Middleware
-- Form Validation using Yup
-- SweetAlert UI notifications
+* User registration and login with **JWT Authentication**
+* Create new events
+* View all events
+* Update existing events
+* Delete events
+* **Protected routes** using authentication middleware
+* Form validation using **Yup**
+* User-friendly alert notifications using **SweetAlert2**
 
 ---
 
 # Tech Stack
 
-### Frontend
+## Frontend
 
-- React.js
-- React Hook Form
-- Yup Validation
-- Axios
-- Bootstrap
-- SweetAlert2
+* React.js
+* React Hook Form
+* Yup Validation
+* Axios
+* Bootstrap
+* SweetAlert2
 
-### Backend
+## Backend
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-- Bcrypt Password Hashing
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* Bcrypt password hashing
 
 ---
 
 # Installation
 
-### 1️⃣ Clone the repository
+### 1. Clone the Repository
 
 ```
 git clone https://github.com/umakant214/Mini_Event_Tracker.git
 ```
 
-### 2️⃣ Install Backend Dependencies
+### 2. Install Backend Dependencies
 
 ```
 cd backend
 npm install
 ```
 
-### 3️⃣ Install Frontend Dependencies
+### 3. Install Frontend Dependencies
 
 ```
 cd frontend
@@ -64,45 +64,41 @@ npm install
 
 ---
 
-# Run Project
+# Running the Project
 
-Project run karne ke liye **backend aur frontend ko alag-alag terminals me start karna hoga**.
+To run the project, start the **backend and frontend servers separately in different terminals**.
 
-### 1️⃣ Backend Run
-
-Backend folder me jaake command run karein:
+### 1. Start the Backend Server
 
 ```
 cd backend
 npm run dev
 ```
 
-Backend server start ho jayega.
+The backend server will start successfully.
 
 ---
 
-### 2️⃣ Frontend Run
-
-Ab frontend folder me jaake React application start karein:
+### 2. Start the Frontend Application
 
 ```
 cd frontend
 npm run dev
 ```
 
-Frontend application browser me run ho jayega.
+The React application will start in the browser.
 
 ---
 
 # Default URLs
 
-Frontend:
+Frontend Application
 
 ```
 http://localhost:5173
 ```
 
-Backend API:
+Backend API
 
 ```
 http://localhost:3000
@@ -112,22 +108,22 @@ http://localhost:3000
 
 # API Endpoints
 
-| Method | API                   | Description    |
-| ------ | --------------------- | -------------- |
-| POST   | /api/register         | Register User  |
-| POST   | /api/login            | Login User     |
-| POST   | /api/create           | Create Event   |
-| GET    | /api/get-event        | Get All Events |
-| PUT    | /api/update-event/:id | Update Event   |
-| DELETE | /api/delete-event/:id | Delete Event   |
+| Method | Endpoint              | Description              |
+| ------ | --------------------- | ------------------------ |
+| POST   | /api/register         | Register a new user      |
+| POST   | /api/login            | Login user               |
+| POST   | /api/create           | Create a new event       |
+| GET    | /api/get-event        | Retrieve all events      |
+| PUT    | /api/update-event/:id | Update an existing event |
+| DELETE | /api/delete-event/:id | Delete an event          |
 
 ---
 
-# 🖥 Event Fields
+# Event Fields
 
 ```
 Title
-dateTime
+DateTime
 Location
 OptionDes
 ```
@@ -136,9 +132,9 @@ OptionDes
 
 # Authentication
 
-All event APIs are protected using **JWT Authentication Middleware**.
+All event-related APIs are protected using **JWT Authentication Middleware**.
 
-Header example:
+Example Header:
 
 ```
 Authorization: Bearer TOKEN
@@ -150,5 +146,5 @@ Authorization: Bearer TOKEN
 
 **Umakant Yadav**
 
-- MERN Stack Developer
-- Diploma in Computer Science Student
+MERN Stack Developer
+Diploma in Computer Science
